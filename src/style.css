@@ -1,0 +1,55 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.5s;
+}
+
+#quote-box {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: color 0.5s;
+  text-align: center;
+}
+
+#text {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tweet-quote, #new-quote {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#new-quote:hover, #tweet-quote:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
